@@ -1,0 +1,11 @@
+<div class="drawing">
+    <canvas #canvas
+            (mousedown)="onMouseDown($event)"
+            (mousemove)="onMouseMove($event)"
+            (mouseup)="onMouseUp()"></canvas>
+    <div class="options">
+      <input type="color" [(ngModel)]="color" (change)="changeColor(color)" />
+      <button (click)="erase()">Erase</button>
+    </div>
+  </div>
+  
